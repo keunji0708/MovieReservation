@@ -63,7 +63,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert Movie</title>
+<title>영화 예약 시스템</title>
 </head>
 
 <script>

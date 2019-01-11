@@ -48,7 +48,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Update Movie</title>
+<title>영화 예약 시스템</title>
 </head>
 <script>
 	alert("영화 수정 완료!");
