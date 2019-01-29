@@ -16,7 +16,7 @@
 
 <body>
 <br/>
-<h id="theater" >Timetable 좌석표</h> <button onclick="location.href='/DatabaseTermp/index.jsp'">Return</button>
+<h id="theater" >Timetable 좌석표</h> <button onclick="location.href='/Movie_DB/index.jsp'">Return</button>
 
 <br>
 <form id='form_screen_info' method='post'> 
