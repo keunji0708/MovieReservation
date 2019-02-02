@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<br>
+<br/>
 	<h>회원 테이블</h>
 	<button onclick='insertUser()'>회원 추가</button>
 <br/>
@@ -52,6 +52,22 @@
 	<tbody id="content_movie"> </tbody>
 	</table>
 	
+<br>
+<h>영화관 테이블</h>
+<button onclick='insertTheater()'>영화관 추가</button>
+<br/>
+<table border="1px" width="500px;">
+			<thead>
+				<tr>
+					<th>theaterID</th>
+					<th>theaterName</th>
+					<th>address</th>
+					<th>telephone</th>
+				</tr>
+			</thead>
+			<tbody id="content_theater"></tbody>
+</table>
+
 <br>
 <script type="text/javascript"> 
 
