@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>영화 정보 등록</title>
+<title>영화 예약 시스템</title>
 </head>
 <body>
 	<h2>영화 등록 폼</h2>
 	
-	<form method= "post" action="/DatabaseTermp/db/movie/insertMovie.jsp">
+	<form method= "post" action="/Movie_DB/WebContent/Movie/InsertMovie.jsp">
 		영화제목 : <input type="text" name="movieName" maxlength="20"><br/>
 		감독 : <input type="text" name="director" maxlength="20"><br/>
 		출연 : <input type="text" name="actor" maxlength="20"><br/>

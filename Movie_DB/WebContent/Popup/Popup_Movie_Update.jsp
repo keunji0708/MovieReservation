@@ -12,8 +12,8 @@
 
 <%
 	String jdbcUrl = "jdbc:mysql://localhost:3306/dbTermp"; // MySQL 계정
-	String dbId = "root"; // MySQL 계정
-	String dbPw = "awef1322"; // 비밀번호
+	String dbId = "root";
+	String dbPw = "awef1322";
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
@@ -72,7 +72,7 @@
         e.printStackTrace();
     }
 %>
-<Form method="POST" action='/DatabaseTermp/db/movie/updateMovie.jsp'>
+<Form method="POST" action='/Movie_DB/DB/Movie/UpdateMovie.jsp'>
 <input type="hidden" name="movieID" value="<%= login_movieID %>" />
 movieID : <%= login_movieID %> <br>
 movieName : <input type="text" name="movieName" value="<%= login_movieName %>" /><br>
