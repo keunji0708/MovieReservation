@@ -20,6 +20,7 @@
 	String userID = request.getParameter("userID");
 	String userName = request.getParameter("userName");
 	String userPwd = request.getParameter("userPwd");
+	String userDate = request.getParameter("userDate");
 	String userAddress = request.getParameter("userAddress");
 	String userPhone = request.getParameter("userPhone");
 	
@@ -33,19 +34,21 @@
 		System.out.println("--- DB Connect Complete ---");
 		
 		sql = "insert into user_table " + 
-				"values(?, ?, ?, 19900909, ?, ?, 0);";
+				"values(?, ?, ?, ?, ?, ?, 0);";
 				
 		pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, userID);
 		pstmt.setString(2, userName);
 		pstmt.setString(3, userPwd);
-		pstmt.setString(4, userAddress);
-		pstmt.setString(5, userPhone);
+		pstmt.setString(4, userDate);
+		pstmt.setString(5, userAddress);
+		pstmt.setString(6, userPhone);
 		pstmt.executeUpdate();
 		System.out.println("--- user insert Complete ---");
 %>
 <script>
 alert("가입 완료!");
+history.go(-1);
 </script>
 <%
 	} catch (Exception e) {
